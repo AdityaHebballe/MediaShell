@@ -96,9 +96,28 @@ export default class PreferenceSensitivityController {
       "notify::enable-expansion",
       () => this.updateVisualizerSensitivity(),
     );
+    this.topBarAppIconRow = this.builder.get_object("er-top-bar-app-icon");
+    this.topBarImageStyleRow = this.builder.get_object(
+      "cr-top-bar-image-style",
+    );
+    this.topBarAppIconColorRow = this.builder.get_object(
+      "sr-top-bar-app-icon-use-color",
+    );
+    this.topBarThumbnailCornerRadiusRow = this.builder.get_object(
+      "sp-top-bar-thumbnail-corner-radius",
+    );
+    this.connectOwnedSignal(
+      this.topBarAppIconRow,
+      "notify::enable-expansion",
+      () => this.updateTopBarImageSensitivity(),
+    );
+    this.connectOwnedSignal(this.topBarImageStyleRow, "notify::selected", () =>
+      this.updateTopBarImageSensitivity(),
+    );
 
     this.updateScrollingSensitivity();
     this.updateVisualizerSensitivity();
+    this.updateTopBarImageSensitivity();
   }
 
   updateScrollingSensitivity() {
@@ -124,6 +143,14 @@ export default class PreferenceSensitivityController {
     const visualizerEnabled = this.visualizerRow.enableExpansion;
     this.visualizerStyleRow.sensitive = visualizerEnabled;
     this.visualizerSpeedRow.sensitive = visualizerEnabled;
+  }
+
+  updateTopBarImageSensitivity() {
+    const imageEnabled = this.topBarAppIconRow.enableExpansion;
+    const usesAlbumArt = this.topBarImageStyleRow.selected === 1;
+    this.topBarAppIconColorRow.sensitive = imageEnabled && !usesAlbumArt;
+    this.topBarThumbnailCornerRadiusRow.sensitive =
+      imageEnabled && usesAlbumArt;
   }
 
   connectOwnedSignal(object, signal, callback) {
@@ -153,5 +180,9 @@ export default class PreferenceSensitivityController {
     this.visualizerRow = null;
     this.visualizerStyleRow = null;
     this.visualizerSpeedRow = null;
+    this.topBarAppIconRow = null;
+    this.topBarImageStyleRow = null;
+    this.topBarAppIconColorRow = null;
+    this.topBarThumbnailCornerRadiusRow = null;
   }
 }

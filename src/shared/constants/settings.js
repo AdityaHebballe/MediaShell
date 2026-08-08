@@ -43,6 +43,13 @@ export const TOP_BAR_TRACK_INFORMATION_WIDTH = Object.freeze({
   DEFAULT: 200,
 });
 
+/** Bounds and default corner radius for the top-bar album-art thumbnail. */
+export const TOP_BAR_THUMBNAIL_CORNER_RADIUS = Object.freeze({
+  MIN: 0,
+  MAX: 10,
+  DEFAULT: 4,
+});
+
 /** Bounds and default value for scrolling track-information speed controls. */
 export const TEXT_SCROLL_SPEED = Object.freeze({
   MIN: 1,

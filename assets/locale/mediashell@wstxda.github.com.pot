@@ -300,6 +300,10 @@ msgstr ""
 msgid "App icon"
 msgstr ""
 
+#: assets/ui/prefs.ui:383
+msgid "Show the app icon"
+msgstr ""
+
 #: assets/ui/top-bar-element-order.ui:27 assets/ui/prefs.ui:59
 #: assets/ui/prefs.ui:279
 msgid "Track information"
@@ -460,10 +464,6 @@ msgstr ""
 
 #: assets/ui/prefs.ui:299
 msgid "Keep the configured width for short text"
-msgstr ""
-
-#: assets/ui/prefs.ui:383
-msgid "Show the app icon"
 msgstr ""
 
 #: assets/ui/prefs.ui:397

@@ -16,3 +16,9 @@ export const TopBarElements = Object.freeze({
   PLAYBACK_CONTROLS: 2,
   VISUALIZER: 3,
 });
+
+/** Available visual styles for the configurable top-bar image element. */
+export const TopBarImageStyles = Object.freeze({
+  APP_ICON: 0,
+  ALBUM_ART: 1,
+});

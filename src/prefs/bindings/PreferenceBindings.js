@@ -103,7 +103,13 @@ const TOP_BAR_BINDINGS = Object.freeze([
     "active",
   ],
   ["top-bar-app-icon-show", "er-top-bar-app-icon", "enable-expansion"],
+  ["top-bar-image-style", "cr-top-bar-image-style", "selected"],
   ["top-bar-app-icon-use-color", "sr-top-bar-app-icon-use-color", "active"],
+  [
+    "top-bar-thumbnail-corner-radius",
+    "sp-top-bar-thumbnail-corner-radius",
+    "value",
+  ],
   ["top-bar-visualizer-show", "er-top-bar-visualizer", "enable-expansion"],
   ["top-bar-visualizer-style", "cr-top-bar-visualizer-style", "selected"],
   ["top-bar-visualizer-speed", "sp-top-bar-visualizer-speed", "value"],

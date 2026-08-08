@@ -352,7 +352,8 @@ class TopBarButton extends PanelMenu.Button {
   }
 
   queueMetadataWidgetUpdate() {
-    let widgetFlags = WidgetFlags.TOP_BAR_TRACK_INFORMATION;
+    let widgetFlags =
+      WidgetFlags.TOP_BAR_APP_ICON | WidgetFlags.TOP_BAR_TRACK_INFORMATION;
     if (this.menu?.isOpen) {
       widgetFlags |=
         WidgetFlags.POPUP_ALBUM_ART | WidgetFlags.POPUP_TRACK_INFORMATION;

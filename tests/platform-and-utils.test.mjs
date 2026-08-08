@@ -17,6 +17,8 @@ import {
   SUPPORTED_GNOME_SHELL_VERSIONS,
   isVersionAtLeast,
 } from "../src/shared/constants/platform.js";
+import { TOP_BAR_THUMBNAIL_CORNER_RADIUS } from "../src/shared/constants/settings.js";
+import { TopBarImageStyles } from "../src/shared/enums/topBar.js";
 import {
   buildAppLookupHints,
   buildDesktopAppIdCandidates,
@@ -51,6 +53,15 @@ test("platform policy is the exact supported baseline", () => {
   assert.equal(isVersionAtLeast(1, 6), true);
   assert.equal(isVersionAtLeast(1, 9), true);
   assert.equal(isVersionAtLeast(2, 0), true);
+});
+
+test("top-bar image styles preserve the app-icon default and thumbnail bounds", () => {
+  assert.deepEqual(TopBarImageStyles, { APP_ICON: 0, ALBUM_ART: 1 });
+  assert.deepEqual(TOP_BAR_THUMBNAIL_CORNER_RADIUS, {
+    MIN: 0,
+    MAX: 10,
+    DEFAULT: 4,
+  });
 });
 
 test("duration formatting handles minutes and hours", () => {

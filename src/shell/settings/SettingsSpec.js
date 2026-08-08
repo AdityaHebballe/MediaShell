@@ -19,12 +19,14 @@ import {
   TOP_BAR_TRACK_INFORMATION_CONTENT_DEFAULT,
   PANEL_INDEX,
   TOP_BAR_TRACK_INFORMATION_WIDTH,
+  TOP_BAR_THUMBNAIL_CORNER_RADIUS,
   TOP_BAR_VISUALIZER_SPEED,
 } from "../../shared/constants/settings.js";
 import { InputActions } from "../../shared/enums/input.js";
 import { SettingsAction } from "../../shared/enums/settings.js";
 import { PanelPositions } from "../../shared/enums/panel.js";
 import { VisualizerStyles } from "../../shared/enums/visualizer.js";
+import { TopBarImageStyles } from "../../shared/enums/topBar.js";
 import { WidgetFlags } from "../../shared/enums/widget.js";
 import {
   enumValueByIndex,
@@ -188,6 +190,18 @@ export const SETTINGS_SPEC = Object.freeze({
     read: "get_boolean",
     impact: WidgetFlags.TOP_BAR_APP_ICON,
   },
+  "top-bar-image-style": {
+    property: "topBarImageStyle",
+    read: "get_enum",
+    fallback: TopBarImageStyles.APP_ICON,
+    impact: WidgetFlags.TOP_BAR_APP_ICON,
+  },
+  "top-bar-thumbnail-corner-radius": {
+    property: "topBarThumbnailCornerRadius",
+    read: "get_uint",
+    transform: createNumericConstraint(TOP_BAR_THUMBNAIL_CORNER_RADIUS),
+    impact: WidgetFlags.TOP_BAR_APP_ICON,
+  },
   "top-bar-visualizer-show": {
     property: "topBarVisualizerShow",
     read: "get_boolean",
@@ -299,7 +313,7 @@ export const SETTINGS_SPEC = Object.freeze({
   "album-art-cache-enabled": {
     property: "albumArtCacheEnabled",
     read: "get_boolean",
-    impact: WidgetFlags.POPUP_ALBUM_ART,
+    impact: WidgetFlags.TOP_BAR_APP_ICON | WidgetFlags.POPUP_ALBUM_ART,
   },
   "blocked-apps": {
     property: "blockedAppIds",
