@@ -300,10 +300,6 @@ msgstr ""
 msgid "App icon"
 msgstr ""
 
-#: assets/ui/prefs.ui:383
-msgid "Show the app icon"
-msgstr ""
-
 #: assets/ui/top-bar-element-order.ui:27 assets/ui/prefs.ui:59
 #: assets/ui/prefs.ui:279
 msgid "Track information"
@@ -653,4 +649,12 @@ msgstr ""
 
 #: assets/ui/blocked-apps.ui:17
 msgid "Add"
+msgstr ""
+
+#: assets/ui/prefs.ui:382
+msgid "Top bar image"
+msgstr ""
+
+#: assets/ui/prefs.ui:383
+msgid "Show the selected image"
 msgstr ""

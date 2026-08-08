@@ -379,8 +379,8 @@
         <child>
           <object class="AdwExpanderRow" id="er-top-bar-app-icon">
             <property name="show-enable-switch">true</property>
-            <property name="title" translatable="yes">App icon</property>
-            <property name="subtitle" translatable="yes">Show the app icon</property>
+            <property name="title" translatable="yes">Top bar image</property>
+            <property name="subtitle" translatable="yes">Show the selected image</property>
             <property name="expanded">false</property>
             <child>
               <object class="AdwComboRow" id="cr-top-bar-image-style">

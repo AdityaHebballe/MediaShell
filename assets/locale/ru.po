@@ -673,3 +673,9 @@ msgstr "Заблокированные приложения игнорируют
 #: assets/ui/blocked-apps.ui:17
 msgid "Add"
 msgstr "Добавить"
+
+msgid "Top bar image"
+msgstr ""
+
+msgid "Show the selected image"
+msgstr ""

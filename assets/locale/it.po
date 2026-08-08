@@ -668,3 +668,9 @@ msgstr "Le app bloccate vengono ignorate e nascoste dall'estensione"
 #: assets/ui/blocked-apps.ui:17
 msgid "Add"
 msgstr "Aggiungi"
+
+msgid "Top bar image"
+msgstr ""
+
+msgid "Show the selected image"
+msgstr ""

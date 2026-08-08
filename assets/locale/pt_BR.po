@@ -666,3 +666,9 @@ msgstr "Aplicativos bloqueados são ignorados e ocultados pela extensão"
 #: assets/ui/blocked-apps.ui:17
 msgid "Add"
 msgstr "Adicionar"
+
+msgid "Top bar image"
+msgstr ""
+
+msgid "Show the selected image"
+msgstr ""

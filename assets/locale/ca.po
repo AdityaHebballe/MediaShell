@@ -670,3 +670,9 @@ msgstr "Les apps bloquejades són ignorades i ocultades per l'extensió"
 #: assets/ui/blocked-apps.ui:17
 msgid "Add"
 msgstr "Afegeix"
+
+msgid "Top bar image"
+msgstr ""
+
+msgid "Show the selected image"
+msgstr ""

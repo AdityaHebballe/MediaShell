@@ -670,3 +670,9 @@ msgstr "Blockierte Apps werden von der Erweiterung ignoriert und ausgeblendet"
 #: assets/ui/blocked-apps.ui:17
 msgid "Add"
 msgstr "Hinzufügen"
+
+msgid "Top bar image"
+msgstr ""
+
+msgid "Show the selected image"
+msgstr ""

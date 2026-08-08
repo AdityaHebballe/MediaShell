@@ -665,3 +665,9 @@ msgstr "Blokované aplikace jsou rozšířením ignorovány a skryty"
 #: assets/ui/blocked-apps.ui:17
 msgid "Add"
 msgstr "Přidat"
+
+msgid "Top bar image"
+msgstr ""
+
+msgid "Show the selected image"
+msgstr ""

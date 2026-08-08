@@ -668,3 +668,9 @@ msgstr "Заблакіраваныя праграмы ігнаруюцца і х
 #: assets/ui/blocked-apps.ui:17
 msgid "Add"
 msgstr "Дадаць"
+
+msgid "Top bar image"
+msgstr ""
+
+msgid "Show the selected image"
+msgstr ""
